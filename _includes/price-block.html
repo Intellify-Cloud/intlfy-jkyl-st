@@ -1,0 +1,12 @@
+{% assign current = site.data.sitetext.prices[include.price_key] %}
+{% assign usual_key = include.price_key | append: '_usual' %}
+{% assign usual = site.data.sitetext.prices[usual_key] %}
+{% assign offer_key = include.price_key | append: '_offer' %}
+{% assign offer = site.data.sitetext.prices[offer_key] %}
+<div class="price-block {{ include.class }}">
+  {% if include.prefix %}<span class="price-prefix">{{ include.prefix }}</span>{% endif %}
+  <strong class="price-now">{{ current }}</strong>
+  {% if usual %}<span class="price-was">{{ usual }}</span>{% endif %}
+  {% if include.suffix %}<span class="price-suffix">{{ include.suffix }}</span>{% endif %}
+  {% if offer %}<span class="price-offer">{{ offer }}</span>{% endif %}
+</div>

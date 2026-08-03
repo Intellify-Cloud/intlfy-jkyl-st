@@ -1,0 +1,137 @@
+[2026-08-03 20:59:53] INFO  WEBrick 1.9.2
+[2026-08-03 20:59:53] INFO  ruby 3.2.11 (2026-03-27) [x64-mingw-ucrt]
+[2026-08-03 20:59:53] INFO  WEBrick::HTTPServer#start: pid=14976 port=4000
+[2026-08-03 20:59:53] INFO  To access this server, open this URL in a browser:
+[2026-08-03 20:59:53] INFO      http://127.0.0.1:4000
+127.0.0.1 - - [03/Aug/2026:21:00:20 South Africa Standard Time] "GET / HTTP/1.1" 200 42045
+- -> /
+127.0.0.1 - - [03/Aug/2026:21:00:20 South Africa Standard Time] "GET /assets/css/main.css?v=20260608-6 HTTP/1.1" 200 79727
+http://127.0.0.1:4000/ -> /assets/css/main.css?v=20260608-6
+127.0.0.1 - - [03/Aug/2026:21:00:20 South Africa Standard Time] "GET /assets/img/hero/more-trust.jpg HTTP/1.1" 200 120007
+http://127.0.0.1:4000/ -> /assets/img/hero/more-trust.jpg
+127.0.0.1 - - [03/Aug/2026:21:00:20 South Africa Standard Time] "GET /assets/img/hero/more-customers.jpg HTTP/1.1" 200 256568
+http://127.0.0.1:4000/ -> /assets/img/hero/more-customers.jpg
+127.0.0.1 - - [03/Aug/2026:21:00:20 South Africa Standard Time] "GET /assets/img/hero/personal-brand_2.jpg HTTP/1.1" 200 109795
+http://127.0.0.1:4000/ -> /assets/img/hero/personal-brand_2.jpg
+127.0.0.1 - - [03/Aug/2026:21:00:20 South Africa Standard Time] "GET /assets/img/hero/more-competitive.jpg HTTP/1.1" 200 102018
+http://127.0.0.1:4000/ -> /assets/img/hero/more-competitive.jpg
+127.0.0.1 - - [03/Aug/2026:21:00:20 South Africa Standard Time] "GET /assets/img/hero/personal-brand.jpg HTTP/1.1" 200 120180
+http://127.0.0.1:4000/ -> /assets/img/hero/personal-brand.jpg
+127.0.0.1 - - [03/Aug/2026:21:00:20 South Africa Standard Time] "GET /assets/js/site.js?v=20260608-6-controls HTTP/1.1" 200 12520
+http://127.0.0.1:4000/ -> /assets/js/site.js?v=20260608-6-controls
+127.0.0.1 - - [03/Aug/2026:21:00:20 South Africa Standard Time] "GET /assets/img/hero/No-Stress.jpg HTTP/1.1" 200 116975
+http://127.0.0.1:4000/ -> /assets/img/hero/No-Stress.jpg
+127.0.0.1 - - [03/Aug/2026:21:00:21 South Africa Standard Time] "GET /assets/img/hero/brand.jpg HTTP/1.1" 200 113630
+http://127.0.0.1:4000/ -> /assets/img/hero/brand.jpg
+127.0.0.1 - - [03/Aug/2026:21:00:21 South Africa Standard Time] "GET /assets/img/brand/favicon.png HTTP/1.1" 200 336
+http://127.0.0.1:4000/ -> /assets/img/brand/favicon.png
+127.0.0.1 - - [03/Aug/2026:21:01:08 South Africa Standard Time] "GET / HTTP/1.1" 200 42045
+- -> /
+127.0.0.1 - - [03/Aug/2026:21:01:08 South Africa Standard Time] "GET /assets/css/main.css?v=20260608-6 HTTP/1.1" 200 79727
+http://127.0.0.1:4000/ -> /assets/css/main.css?v=20260608-6
+127.0.0.1 - - [03/Aug/2026:21:01:55 South Africa Standard Time] "GET / HTTP/1.1" 200 42045
+- -> /
+127.0.0.1 - - [03/Aug/2026:21:01:55 South Africa Standard Time] "GET /assets/css/main.css?v=20260608-6 HTTP/1.1" 200 79727
+http://127.0.0.1:4000/ -> /assets/css/main.css?v=20260608-6
+127.0.0.1 - - [03/Aug/2026:21:03:28 South Africa Standard Time] "GET / HTTP/1.1" 200 42045
+- -> /
+127.0.0.1 - - [03/Aug/2026:21:03:28 South Africa Standard Time] "GET /assets/css/main.css?v=20260608-6 HTTP/1.1" 200 79727
+http://127.0.0.1:4000/ -> /assets/css/main.css?v=20260608-6
+127.0.0.1 - - [03/Aug/2026:21:04:08 South Africa Standard Time] "GET / HTTP/1.1" 200 42049
+- -> /
+127.0.0.1 - - [03/Aug/2026:21:04:08 South Africa Standard Time] "GET /assets/css/main.css?v=20260608-6 HTTP/1.1" 200 79727
+http://127.0.0.1:4000/ -> /assets/css/main.css?v=20260608-6
+127.0.0.1 - - [03/Aug/2026:21:04:21 South Africa Standard Time] "GET / HTTP/1.1" 200 42047
+- -> /
+127.0.0.1 - - [03/Aug/2026:21:04:21 South Africa Standard Time] "GET /assets/css/main.css?v=20260608-6 HTTP/1.1" 200 79727
+http://127.0.0.1:4000/ -> /assets/css/main.css?v=20260608-6
+127.0.0.1 - - [03/Aug/2026:21:04:34 South Africa Standard Time] "GET / HTTP/1.1" 200 42051
+- -> /
+127.0.0.1 - - [03/Aug/2026:21:04:34 South Africa Standard Time] "GET /assets/css/main.css?v=20260608-6 HTTP/1.1" 200 79727
+http://127.0.0.1:4000/ -> /assets/css/main.css?v=20260608-6
+127.0.0.1 - - [03/Aug/2026:21:05:46 South Africa Standard Time] "GET / HTTP/1.1" 200 42051
+- -> /
+127.0.0.1 - - [03/Aug/2026:21:05:46 South Africa Standard Time] "GET /assets/css/main.css?v=20260608-6 HTTP/1.1" 200 79727
+http://127.0.0.1:4000/ -> /assets/css/main.css?v=20260608-6
+127.0.0.1 - - [03/Aug/2026:21:05:47 South Africa Standard Time] "GET / HTTP/1.1" 304 0
+- -> /
+127.0.0.1 - - [03/Aug/2026:21:06:14 South Africa Standard Time] "GET / HTTP/1.1" 200 42051
+- -> /
+127.0.0.1 - - [03/Aug/2026:21:06:14 South Africa Standard Time] "GET /assets/css/main.css?v=20260608-6 HTTP/1.1" 200 79727
+http://127.0.0.1:4000/ -> /assets/css/main.css?v=20260608-6
+127.0.0.1 - - [03/Aug/2026:21:06:16 South Africa Standard Time] "GET / HTTP/1.1" 200 42051
+- -> /
+127.0.0.1 - - [03/Aug/2026:21:06:16 South Africa Standard Time] "GET /assets/css/main.css?v=20260608-6 HTTP/1.1" 200 79727
+http://127.0.0.1:4000/ -> /assets/css/main.css?v=20260608-6
+127.0.0.1 - - [03/Aug/2026:21:06:17 South Africa Standard Time] "GET / HTTP/1.1" 200 42051
+- -> /
+127.0.0.1 - - [03/Aug/2026:21:06:17 South Africa Standard Time] "GET /assets/css/main.css?v=20260608-6 HTTP/1.1" 200 79727
+http://127.0.0.1:4000/ -> /assets/css/main.css?v=20260608-6
+127.0.0.1 - - [03/Aug/2026:21:07:02 South Africa Standard Time] "GET / HTTP/1.1" 200 42049
+- -> /
+127.0.0.1 - - [03/Aug/2026:21:07:02 South Africa Standard Time] "GET /assets/css/main.css?v=20260608-6 HTTP/1.1" 200 79727
+http://127.0.0.1:4000/ -> /assets/css/main.css?v=20260608-6
+127.0.0.1 - - [03/Aug/2026:21:07:14 South Africa Standard Time] "GET / HTTP/1.1" 200 42047
+- -> /
+127.0.0.1 - - [03/Aug/2026:21:07:14 South Africa Standard Time] "GET /assets/css/main.css?v=20260608-6 HTTP/1.1" 200 79727
+http://127.0.0.1:4000/ -> /assets/css/main.css?v=20260608-6
+127.0.0.1 - - [03/Aug/2026:21:09:52 South Africa Standard Time] "GET / HTTP/1.1" 200 42047
+- -> /
+127.0.0.1 - - [03/Aug/2026:21:09:52 South Africa Standard Time] "GET /assets/css/main.css?v=20260608-6 HTTP/1.1" 200 79727
+http://127.0.0.1:4000/ -> /assets/css/main.css?v=20260608-6
+127.0.0.1 - - [03/Aug/2026:21:09:53 South Africa Standard Time] "GET / HTTP/1.1" 304 0
+- -> /
+127.0.0.1 - - [03/Aug/2026:21:10:01 South Africa Standard Time] "GET /image-your-site-starter/ HTTP/1.1" 200 26951
+http://127.0.0.1:4000/ -> /image-your-site-starter/
+127.0.0.1 - - [03/Aug/2026:21:10:01 South Africa Standard Time] "GET /assets/img/starter-showcase/business-strategist-gradient.png HTTP/1.1" 200 1878910
+http://127.0.0.1:4000/image-your-site-starter/ -> /assets/img/starter-showcase/business-strategist-gradient.png
+127.0.0.1 - - [03/Aug/2026:21:10:01 South Africa Standard Time] "GET /assets/img/starter-showcase/jane-hero.png HTTP/1.1" 200 1941189
+http://127.0.0.1:4000/image-your-site-starter/ -> /assets/img/starter-showcase/jane-hero.png
+127.0.0.1 - - [03/Aug/2026:21:10:01 South Africa Standard Time] "GET /assets/img/video/cinematic-swimmer-bw.mp4 HTTP/1.1" 206 7284685
+http://127.0.0.1:4000/image-your-site-starter/ -> /assets/img/video/cinematic-swimmer-bw.mp4
+127.0.0.1 - - [03/Aug/2026:21:10:20 South Africa Standard Time] "GET /contact/ HTTP/1.1" 200 12225
+http://127.0.0.1:4000/ -> /contact/
+127.0.0.1 - - [03/Aug/2026:21:10:20 South Africa Standard Time] "GET /assets/css/main.css?v=20260608-6 HTTP/1.1" 200 79727
+http://127.0.0.1:4000/contact/ -> /assets/css/main.css?v=20260608-6
+127.0.0.1 - - [03/Aug/2026:21:13:26 South Africa Standard Time] "GET / HTTP/1.1" 200 42047
+http://127.0.0.1:4000/contact/ -> /
+127.0.0.1 - - [03/Aug/2026:21:13:27 South Africa Standard Time] "GET /assets/css/main.css?v=20260608-6 HTTP/1.1" 200 79727
+http://127.0.0.1:4000/ -> /assets/css/main.css?v=20260608-6
+127.0.0.1 - - [03/Aug/2026:21:13:28 South Africa Standard Time] "GET / HTTP/1.1" 200 42047
+http://127.0.0.1:4000/contact/ -> /
+127.0.0.1 - - [03/Aug/2026:21:13:59 South Africa Standard Time] "GET / HTTP/1.1" 200 42047
+http://127.0.0.1:4000/contact/ -> /
+127.0.0.1 - - [03/Aug/2026:21:13:59 South Africa Standard Time] "GET /assets/css/main.css?v=20260608-6 HTTP/1.1" 200 79727
+http://127.0.0.1:4000/ -> /assets/css/main.css?v=20260608-6
+127.0.0.1 - - [03/Aug/2026:21:15:52 South Africa Standard Time] "GET / HTTP/1.1" 200 42270
+http://127.0.0.1:4000/contact/ -> /
+127.0.0.1 - - [03/Aug/2026:21:15:52 South Africa Standard Time] "GET /assets/css/main.css?v=20260608-6 HTTP/1.1" 200 79727
+http://127.0.0.1:4000/ -> /assets/css/main.css?v=20260608-6
+127.0.0.1 - - [03/Aug/2026:21:16:13 South Africa Standard Time] "GET / HTTP/1.1" 200 42270
+http://127.0.0.1:4000/contact/ -> /
+127.0.0.1 - - [03/Aug/2026:21:16:13 South Africa Standard Time] "GET /assets/css/main.css?v=20260608-6 HTTP/1.1" 200 79727
+http://127.0.0.1:4000/ -> /assets/css/main.css?v=20260608-6
+127.0.0.1 - - [03/Aug/2026:21:16:29 South Africa Standard Time] "GET / HTTP/1.1" 200 42270
+http://127.0.0.1:4000/contact/ -> /
+127.0.0.1 - - [03/Aug/2026:21:16:29 South Africa Standard Time] "GET /assets/css/main.css?v=20260608-6 HTTP/1.1" 200 79727
+http://127.0.0.1:4000/ -> /assets/css/main.css?v=20260608-6
+127.0.0.1 - - [03/Aug/2026:21:18:29 South Africa Standard Time] "GET / HTTP/1.1" 200 42267
+http://127.0.0.1:4000/contact/ -> /
+127.0.0.1 - - [03/Aug/2026:21:18:29 South Africa Standard Time] "GET /assets/css/main.css?v=20260608-6 HTTP/1.1" 200 80105
+http://127.0.0.1:4000/ -> /assets/css/main.css?v=20260608-6
+127.0.0.1 - - [03/Aug/2026:21:18:30 South Africa Standard Time] "GET / HTTP/1.1" 200 42267
+http://127.0.0.1:4000/contact/ -> /
+127.0.0.1 - - [03/Aug/2026:21:19:08 South Africa Standard Time] "GET / HTTP/1.1" 200 42267
+http://127.0.0.1:4000/contact/ -> /
+127.0.0.1 - - [03/Aug/2026:21:19:08 South Africa Standard Time] "GET /assets/css/main.css?v=20260608-6 HTTP/1.1" 200 80105
+http://127.0.0.1:4000/ -> /assets/css/main.css?v=20260608-6
+127.0.0.1 - - [03/Aug/2026:21:19:36 South Africa Standard Time] "GET / HTTP/1.1" 200 42267
+http://127.0.0.1:4000/contact/ -> /
+127.0.0.1 - - [03/Aug/2026:21:19:36 South Africa Standard Time] "GET /assets/css/main.css?v=20260608-6 HTTP/1.1" 200 80105
+http://127.0.0.1:4000/ -> /assets/css/main.css?v=20260608-6
+127.0.0.1 - - [03/Aug/2026:21:20:29 South Africa Standard Time] "GET / HTTP/1.1" 200 42267
+http://127.0.0.1:4000/contact/ -> /
+127.0.0.1 - - [03/Aug/2026:21:20:29 South Africa Standard Time] "GET /assets/css/main.css?v=20260608-6 HTTP/1.1" 200 80105
+http://127.0.0.1:4000/ -> /assets/css/main.css?v=20260608-6
+127.0.0.1 - - [03/Aug/2026:21:21:48 South Africa Standard Time] "GET / HTTP/1.1" 200 39880
+http://127.0.0.1:4000/contact/ -> /
