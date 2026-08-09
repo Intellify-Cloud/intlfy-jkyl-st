@@ -1,0 +1,39 @@
+<nav class="site-nav" data-nav>
+  <div class="nav-inner">
+    <a class="brand" href="{{ '/' | relative_url }}" aria-label="{{ site.data.sitetext.name }} home">
+      <span class="brand-dot"></span>
+      <span>{{ site.data.navigation.logo }}</span>
+    </a>
+
+    <div class="nav-links">
+      {% for link in site.data.navigation.nav %}
+        {% if link.url %}
+          <a href="{{ link.url | relative_url }}">{{ link.title }}</a>
+        {% else %}
+          <a href="{{ link.section | prepend: '/' | relative_url }}">{{ link.title }}</a>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <div class="nav-actions">
+      <button class="icon-button" type="button" data-theme-toggle aria-label="Toggle dark mode">
+        <span class="theme-sun" aria-hidden="true">&#9728;</span>
+        <span class="theme-moon" aria-hidden="true">&#9790;</span>
+      </button>
+      <button class="icon-button menu-button" type="button" data-menu-toggle aria-label="Toggle menu">
+        <span class="menu-open" aria-hidden="true">&#9776;</span>
+        <span class="menu-close" aria-hidden="true">&times;</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-menu" data-mobile-menu>
+    {% for link in site.data.navigation.nav %}
+      {% if link.url %}
+        <a href="{{ link.url | relative_url }}">{{ link.title }}</a>
+      {% else %}
+        <a href="{{ link.section | prepend: '/' | relative_url }}">{{ link.title }}</a>
+      {% endif %}
+    {% endfor %}
+  </div>
+</nav>

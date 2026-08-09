@@ -1,0 +1,298 @@
+// Duces Capital five-step advantage section.
+// Colourful card design with a horizontal desktop stack.
+
+.five-steps-block {
+  --steps-background: #f3f5f9;
+  --steps-primary: #30475e;
+  --steps-primary-dark: #263b4f;
+  --steps-secondary: #4a6fa5;
+  --steps-secondary-dark: #3d5f8e;
+  --steps-accent: #e3a008;
+  --steps-accent-dark: #b98006;
+  --steps-card: #ffffff;
+  --steps-text: #1f2937;
+  --steps-muted: #64748b;
+  --steps-border: #d8dee8;
+
+  position: relative;
+  overflow: hidden;
+  padding: 88px 72px;
+  background:
+    radial-gradient(circle at 10% 10%, rgba(255, 255, 255, 0.9), transparent 28%),
+    radial-gradient(circle at 92% 86%, rgba(74, 111, 165, 0.12), transparent 25%),
+    var(--steps-background);
+
+  &::before,
+  &::after {
+    position: absolute;
+    width: 170px;
+    height: 90px;
+    content: "";
+    opacity: 0.16;
+    background-image: radial-gradient(var(--steps-primary) 1.5px, transparent 1.5px);
+    background-size: 10px 10px;
+    pointer-events: none;
+  }
+
+  &::before {
+    top: 34%;
+    left: -58px;
+  }
+
+  &::after {
+    right: -48px;
+    bottom: 12%;
+  }
+
+  .next-steps__inner {
+    position: relative;
+    z-index: 1;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .next-steps__header {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(320px, 0.72fr);
+    align-items: end;
+    gap: 64px;
+    margin-bottom: 44px;
+  }
+
+  .next-steps__title {
+    @include section-title-typography;
+    margin: 0;
+    color: var(--steps-primary);
+  }
+
+  .next-steps__intro {
+    @include desktop-paragraph-typography;
+    margin: 0;
+    padding-left: 22px;
+    border-left: 3px solid var(--steps-accent);
+    color: var(--steps-muted);
+  }
+
+  .next-steps__steps {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    align-items: start;
+    gap: 10px;
+    margin: 0;
+    padding: 42px 0 58px;
+    list-style: none;
+  }
+
+  .next-steps__step {
+    position: relative;
+    display: flex;
+    min-width: 0;
+    min-height: 370px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 54px 24px 28px;
+    border-radius: 18px 18px 6px 6px;
+    background: linear-gradient(
+      180deg,
+      var(--steps-card) 0%,
+      var(--steps-card) 72%,
+      var(--steps-background) 100%
+    );
+    box-shadow: none;
+    transition: transform $motion-standard;
+
+    &::before {
+      position: absolute;
+      top: -1px;
+      right: -1px;
+      left: -1px;
+      height: 30px;
+      border-radius: 18px 18px 0 0;
+      background: linear-gradient(180deg, #5f7fb0, var(--steps-secondary));
+      content: "";
+    }
+
+    &:hover {
+      transform: translateY(-6px);
+    }
+  }
+
+  .next-steps__step:nth-child(even) {
+    margin-top: 0;
+    padding: 54px 24px;
+    border-radius: 6px 6px 18px 18px;
+    background: linear-gradient(
+      180deg,
+      var(--steps-background) 0%,
+      var(--steps-card) 28%,
+      var(--steps-card) 100%
+    );
+
+    &::before {
+      top: auto;
+      bottom: -1px;
+      height: 30px;
+      border-radius: 0 0 18px 18px;
+    }
+  }
+
+  .next-steps__step:nth-child(1)::before {
+    background: linear-gradient(180deg, #f2bd35, var(--steps-accent));
+  }
+
+  .next-steps__step:nth-child(2)::before {
+    background: linear-gradient(180deg, #6d8dbb, var(--steps-secondary));
+  }
+
+  .next-steps__step:nth-child(3)::before {
+    background: linear-gradient(180deg, #4f6d88, var(--steps-primary));
+  }
+
+  .next-steps__step:nth-child(4)::before {
+    background: linear-gradient(180deg, #63bfbd, #379b9a);
+  }
+
+  .next-steps__step:nth-child(5)::before {
+    background: linear-gradient(180deg, #6f96c4, #3979ac);
+  }
+
+  .next-steps__step-number {
+    display: block;
+    width: auto;
+    height: auto;
+    margin-bottom: 20px;
+    background: transparent;
+    box-shadow: none;
+    color: var(--steps-primary);
+    font-family: $font-display;
+    font-size: 2.35rem;
+    font-weight: 500;
+    line-height: 1;
+  }
+
+  .next-steps__step-content {
+    position: relative;
+    min-width: 0;
+  }
+
+  .next-steps__step-title {
+    margin: 0 0 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--steps-border);
+    color: var(--steps-text);
+    font-family: $font-display;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+
+  .next-steps__step-body {
+    margin: 0;
+    color: var(--steps-muted);
+    font-family: $font-body;
+    font-size: 0.86rem;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 1199px) {
+  .five-steps-block {
+    padding: 72px 40px;
+
+    .next-steps__header {
+      grid-template-columns: 1fr;
+      gap: 22px;
+    }
+
+    .next-steps__intro {
+      max-width: 720px;
+    }
+
+    .next-steps__steps {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+      padding: 10px 0 0;
+    }
+
+    .next-steps__step {
+      min-height: 290px;
+    }
+
+    .next-steps__step:nth-child(even) {
+      margin-top: 0;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .five-steps-block {
+    padding: 52px 16px;
+
+    .next-steps__header {
+      gap: 18px;
+      margin-bottom: 32px;
+      text-align: center;
+    }
+
+    .next-steps__intro {
+      padding: 16px 0 0;
+      border-top: 3px solid var(--steps-accent);
+      border-left: 0;
+    }
+
+    .next-steps__steps {
+      grid-template-columns: 1fr;
+      gap: 18px;
+      padding-top: 0;
+    }
+
+    .next-steps__step {
+      display: grid;
+      grid-template-columns: 58px minmax(0, 1fr);
+      gap: 18px;
+      min-height: 0;
+      padding: 42px 20px 24px;
+      border-radius: 18px 18px 6px 6px;
+    }
+
+    .next-steps__step:nth-child(even) {
+      padding: 42px 20px 24px;
+      border-radius: 18px 18px 6px 6px;
+      background: linear-gradient(
+        180deg,
+        var(--steps-card) 0%,
+        var(--steps-card) 72%,
+        var(--steps-background) 100%
+      );
+
+      &::before {
+        top: -1px;
+        bottom: auto;
+        border-radius: 18px 18px 0 0;
+      }
+    }
+
+    .next-steps__step-number {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    .next-steps__step-content {
+      padding: 0 0 0 18px;
+      border-left: 1px solid var(--steps-border);
+    }
+
+    .next-steps__step-title {
+      padding-bottom: 10px;
+    }
+
+    .next-steps__step-title {
+      font-size: 1.05rem;
+    }
+
+    .next-steps__step-body {
+      font-size: 0.9rem;
+      line-height: 1.55;
+    }
+  }
+}

@@ -1,0 +1,114 @@
+.offering {
+  padding: 96px 0;
+}
+
+.offering-header {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.offering-header .lead {
+  margin-top: 18px;
+}
+
+.offering-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.offering-card {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  padding: 32px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--surface);
+  box-shadow: 0 8px 28px rgba(15, 23, 42, 0.04);
+}
+
+.offering-card.is-featured {
+  border-color: rgba(234, 88, 12, 0.38);
+  box-shadow: 0 20px 60px rgba(234, 88, 12, 0.14);
+}
+
+.offering-card h3 {
+  margin: 18px 0 12px;
+  font-size: 28px;
+}
+
+.offering-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.badge {
+  align-self: flex-start;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.offering-price {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin: 28px 0;
+}
+
+.offering-price del,
+.price del {
+  color: var(--muted);
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration-thickness: 2px;
+}
+
+.offering-price strong {
+  font-size: 48px;
+  line-height: 1;
+}
+
+.offer-sash {
+  position: absolute;
+  top: 26px;
+  right: -30px;
+  width: 190px;
+  padding: 8px 0;
+  transform: rotate(35deg);
+  background: var(--accent);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-align: center;
+  text-transform: uppercase;
+  box-shadow: 0 10px 24px rgba(234, 88, 12, 0.24);
+}
+
+.offering-features {
+  display: grid;
+  gap: 12px;
+  padding: 0;
+  margin: 0 0 32px;
+  list-style: none;
+}
+
+.offering-features li {
+  display: flex;
+  gap: 10px;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.offering-card .button {
+  width: 100%;
+  margin-top: auto;
+}

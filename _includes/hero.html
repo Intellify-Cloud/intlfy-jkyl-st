@@ -1,0 +1,24 @@
+{% if content.hero.show %}
+<section class="hero" aria-labelledby="hero-heading">
+  <div class="container hero-content">
+    <div class="hero-copy">
+      <div class="eyebrow">{{ content.hero.eyebrow }}</div>
+      <h1 id="hero-heading">
+        {{ content.hero.headline }}{% if content.hero.headline_highlight %}<br><span class="hero-highlight">{{ content.hero.headline_highlight }}</span>{% endif %}
+      </h1>
+      <p class="lead hero-subheadline">{{ content.hero.subheadline }}</p>
+      <p class="hero-supporting-text">{{ content.hero.supporting_text }}</p>
+      <nav class="hero-actions" aria-label="Hero actions">
+        <a class="button" href="{{ content.hero.primary_cta.href | relative_url }}">{{ content.hero.primary_cta.label }} <span aria-hidden="true">&rarr;</span></a>
+      </nav>
+      {% if content.hero.proof_points %}
+        <ul class="hero-proof-list" aria-label="Included website subscription benefits">
+          {% for proof in content.hero.proof_points %}
+            <li>{{ proof }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </div>
+  </div>
+</section>
+{% endif %}

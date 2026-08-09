@@ -1,0 +1,12 @@
+{
+  "name": "intellify-jekyll-site",
+  "private": true,
+  "scripts": {
+    "bundle": "bundle exec jekyll build && powershell -NoProfile -ExecutionPolicy Bypass -File scripts/check-css-output.ps1",
+    "build": "bundle exec jekyll build",
+    "check": "bundle exec jekyll build --trace && powershell -NoProfile -ExecutionPolicy Bypass -File scripts/check-css-output.ps1",
+    "check:css": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/check-css-output.ps1",
+    "serve": "bundle exec jekyll serve --livereload",
+    "dev": "bundle exec jekyll serve --livereload"
+  }
+}

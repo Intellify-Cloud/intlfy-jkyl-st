@@ -1,0 +1,56 @@
+.contact-shell {
+  padding: 64px 0 96px;
+  background: var(--surface-soft);
+  border-top: 1px solid var(--line);
+}
+
+.form-card {
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+.field {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.field label {
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  outline: 0;
+  background: var(--surface-soft);
+  color: var(--text);
+}
+
+.field input:focus,
+.field textarea:focus {
+  border-color: var(--accent);
+}
+
+.honeypot {
+  position: absolute;
+  left: -9999px;
+}
+
+.form-status {
+  min-height: 24px;
+  margin-top: 16px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.form-status a {
+  color: var(--accent);
+  text-decoration: underline;
+}

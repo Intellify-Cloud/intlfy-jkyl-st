@@ -1,0 +1,179 @@
+.split-layout {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.plan-card {
+  position: sticky;
+  top: 116px;
+  overflow: hidden;
+  padding: 36px;
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(241, 245, 249, 0.74));
+  box-shadow: 0 14px 52px rgba(15, 23, 42, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  transition: transform 320ms ease, box-shadow 320ms ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 22px 68px rgba(15, 23, 42, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.plan-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 6px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  border-radius: 22px 22px 0 0;
+}
+
+.plan-card .badge,
+.plan-card h3,
+.plan-card strong,
+.plan-card p,
+.plan-card .price {
+  color: #111827;
+}
+
+.plan-card p {
+  color: #4b5563;
+}
+
+.plan-card .price strong {
+  color: #0f172a;
+}
+
+.price,
+.tier-price {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin: 22px 0;
+}
+
+.price strong,
+.tier-price strong {
+  font-size: 48px;
+  line-height: 1;
+}
+
+.usp {
+  padding: 16px;
+  margin: 24px 0;
+  border: 1px solid rgba(234, 88, 12, 0.25);
+  border-radius: 14px;
+  background: rgba(234, 88, 12, 0.1);
+  text-align: center;
+}
+
+.portfolio-tier-grid {
+  display: grid;
+  gap: 18px;
+  margin: 28px 0 56px;
+}
+
+.portfolio-tier-card {
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--surface);
+  box-shadow: 0 8px 28px rgba(15, 23, 42, 0.06);
+  transition: transform 320ms ease, box-shadow 320ms ease, border-color 320ms ease;
+}
+
+.portfolio-tier-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(15, 23, 42, 0.12);
+  border-color: rgba(234, 88, 12, 0.28);
+}
+
+.portfolio-tier-card.is-featured {
+  border-color: rgba(234, 88, 12, 0.5);
+  box-shadow: 0 16px 52px rgba(234, 88, 12, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.portfolio-tier-card.is-featured:hover {
+  box-shadow: 0 24px 68px rgba(234, 88, 12, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.16);
+  border-color: rgba(234, 88, 12, 0.7);
+}
+
+.portfolio-tier-card h3 {
+  margin: 16px 0 0;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.portfolio-tier-card p {
+  margin: 0 0 22px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.portfolio-tier-card ul {
+  display: grid;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.portfolio-tier-card li {
+  display: flex;
+  gap: 10px;
+  color: var(--muted);
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.dark .portfolio-tier-card {
+  border-color: rgba(148, 163, 184, 0.2);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.dark .portfolio-tier-card:hover {
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  border-color: rgba(148, 163, 184, 0.35);
+}
+
+.dark .portfolio-tier-card h3 {
+  color: #f1f5f9;
+}
+
+.dark .portfolio-tier-card p {
+  color: #94a3b8;
+}
+
+.dark .portfolio-tier-card li {
+  color: #cbd5e1;
+}
+
+.feature-detail {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  gap: 18px;
+  margin-bottom: 42px;
+}
+
+.quote-panel {
+  margin-top: 104px;
+  padding: clamp(40px, 8vw, 88px);
+  overflow: hidden;
+  border-radius: 28px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 24px 80px rgba(234, 88, 12, 0.22);
+}
+
+.quote-panel h2 {
+  margin: 0 0 28px;
+  font-size: clamp(28px, 5vw, 50px);
+  line-height: 1.15;
+}

@@ -1,0 +1,20 @@
+<section class="five-steps-block" id="duces-advantage">
+  <div class="next-steps__inner">
+    <header class="next-steps__header">
+      <h2 class="next-steps__title">{{ site.data.sitetext.five_steps_block.title }}</h2>
+      <p class="next-steps__intro">{{ site.data.sitetext.five_steps_block.intro }}</p>
+    </header>
+
+    <ol class="next-steps__steps">
+      {% for step in site.data.sitetext.five_steps_block.steps %}
+        <li class="next-steps__step">
+          <div class="next-steps__step-number" aria-hidden="true">{{ forloop.index }}</div>
+          <div class="next-steps__step-content">
+            <h3 class="next-steps__step-title">{{ step.title }}</h3>
+            <p class="next-steps__step-body">{{ step.text }}</p>
+          </div>
+        </li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>

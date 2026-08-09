@@ -1,0 +1,22 @@
+# Jekyll build output & caches
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+.jekyll-server.log
+.jekyll-server.err.log
+.static-server.log
+.static-server.err.log
+
+# Private/local planning notes
+_private_docs/
+.private/
+.kilo/
+
+# Local environment
+.env
+.env.*
+
+# Bundler
+.bundle/
+vendor/

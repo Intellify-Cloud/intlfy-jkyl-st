@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    {% if site.google_tag_manager %}
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.google_tag_manager | uri_escape }}"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    {% endif %}
+    <main>
+      {{ content }}
+    </main>
+    <script src="{{ '/assets/js/site.js' | relative_url }}?v={{ site.css_version }}-controls" defer></script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+.mission-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.mission-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-height: 260px;
+  padding: 24px;
+  border-radius: 18px;
+  background: var(--surface-soft);
+  transition: transform 160ms ease;
+}
+
+.mission-card:hover {
+  transform: rotate(-1deg) scale(0.98);
+}
+
+.mission-card:nth-child(1),
+.mission-card:nth-child(4) {
+  grid-column: span 4;
+}
+
+.mission-card:nth-child(2),
+.mission-card:nth-child(3) {
+  grid-column: span 8;
+}
+
+.mission-heading,
+.feature-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0;
+  font-size: 24px;
+}
+
+.mission-copy {
+  display: grid;
+  align-items: center;
+  flex: 1;
+  padding: 24px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.6;
+}

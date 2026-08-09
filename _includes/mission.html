@@ -1,0 +1,24 @@
+{% if content.mission.show %}
+<section id="mission" class="section" aria-labelledby="mission-heading">
+  <div class="wide-container">
+    <p class="section-kicker">{{ content.mission.title }}</p>
+    <h2 id="mission-heading" class="section-title">
+      {{ content.mission.highlight }}<span class="muted-span">{{ content.mission.subtitle }}</span>
+    </h2>
+
+    <div class="mission-grid">
+      {% for feature in content.mission.features %}
+        <article class="mission-card">
+          <h3 class="mission-heading">
+            <span class="icon-badge" aria-hidden="true">&#10022;</span>
+            {{ feature.label }}
+          </h3>
+          <div class="mission-copy">
+            <p>{{ content.mission.paragraphs[forloop.index0] }}</p>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}

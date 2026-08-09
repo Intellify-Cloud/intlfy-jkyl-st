@@ -1,0 +1,37 @@
+<section class="three-step-section" id="duces-process">
+  <div class="three-step-section__inner">
+    <div class="three-step-section__intro">
+      <!-- <p class="three-step-section__eyebrow">{{ site.data.sitetext.three_step_section.eyebrow }}</p> -->
+      <h2 class="three-step-section__title">{{ site.data.sitetext.three_step_section.title }}</h2>
+
+      <div class="three-step-section__actions">
+        <a class="three-step-section__btn three-step-section__btn--primary" href="{{ site.data.sitetext.three_step_section.primary_url }}">
+          {{ site.data.sitetext.three_step_section.primary_label }}
+        </a>
+        <a class="three-step-section__btn three-step-section__btn--secondary" href="{{ site.data.sitetext.three_step_section.secondary_url }}">
+          {{ site.data.sitetext.three_step_section.secondary_label }}
+        </a>
+      </div>
+
+      <figure class="three-step-section__media">
+        <img
+          src="{{ '/assets/img/sections/4-steps.png' | relative_url }}"
+          alt="Smiling Duces Capital clients"
+        />
+      </figure>
+    </div>
+
+    <ol class="three-step-timeline">
+      {% for step in site.data.sitetext.three_step_section.steps %}
+        <li class="three-step-timeline__item">
+          <div class="three-step-timeline__badge">{{ forloop.index }}</div>
+          <div class="three-step-timeline__connector" aria-hidden="true"></div>
+          <div class="three-step-timeline__content">
+            <h3 class="three-step-timeline__title">{{ step.title }}</h3>
+            <p class="three-step-timeline__text">{{ step.text }}</p>
+          </div>
+        </li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>

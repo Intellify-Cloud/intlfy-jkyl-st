@@ -1,0 +1,369 @@
+name: Intellify
+whatsapp: "27818868834"
+email: pieter@intellify.co.za
+support_email: support@intellify.co.za
+contact_url: /contact/
+
+prices:
+  starter: R99
+  starter_original: R150
+  recommended: R199
+  premium: R350
+
+footer:
+  brand:
+    description: Managed website subscriptions for South African businesses that want a professional online presence without upfront build costs.
+  columns:
+    - title: Pricing
+      links:
+        - label: Website Plans
+          href: /pricing/
+        - label: SEO-Friendly Websites
+          href: /#services
+        - label: Domain & Hosting
+          href: /#services
+        - label: Questions & Answers
+          href: /#faq
+    - title: Company
+      links:
+        - label: Mission
+          href: /#mission
+        - label: Our Work
+          href: /#our-work
+        - label: Contact
+          href: /contact/
+    - title: Contact
+      links:
+        - label: Email
+          href: mailto:pieter@intellify.co.za
+        - label: WhatsApp
+          href: https://api.whatsapp.com/send/?phone=27818868834&text&type=phone_number&app_absent=0
+        - label: Contact Form
+          href: /contact/
+  links:
+    - label: Privacy Policy
+      href: /privacy-policy/
+
+hero:
+  show: true
+  eyebrow: Affordable Subscriptions Websites
+  headline: Professional Websites.
+  headline_highlight: ZERO Upfront Costs.
+  subheadline: "Limited offer: from R99/month, usually R150/month. We build, host, and manage everything for you."
+  supporting_text: "We can help and handle design, domain registration, hosting, updates, and security while you run your business."
+  primary_cta:
+    label: Get My Website
+    href: /contact/
+  proof_points:
+    - No upfront cost
+    - From R99/month
+    - Fully managed
+lets_get_going:
+  show: true
+  kicker: Why businesses choose Intellify
+  title: No upfront cost.<br>No lock-in.<br>No technical headaches.
+  text: We've helped local businesses get online with a website that works—without the R5,000–R15,000 build fee, hosting hassles, or long-term contracts.
+  stats:
+    - value: "99.9%"
+      label: Uptime guarantee
+    - value: "5 Days"
+      label: Average launch time
+    - value: "R 0.00"
+      label: Upfront build cost
+  trust_badges:
+    - Founder owned & operated
+    - Friendly support
+    - No hidden fees
+  risk_reversal:
+    headline: Try it risk-free
+    points:
+      - Cancel anytime
+      - No contracts, no penalties
+      - Easy migration to next tier
+  objection_handlers:
+    - objection: "What if I need changes later?"
+      answer: "Every plan includes monthly content updates. Need more? We're an email away."
+    - objection: "Will my site look generic?"
+      answer: "Every site is custom-designed for your brand — no templates, no cookie-cutter layouts."
+    - objection: "What happens if something breaks?"
+      answer: "We monitor 24/7. Security patches, backups, and uptime are our problem, not yours."
+    - objection: "Is SEO actually included?"
+      answer: "Yes — fast, mobile-first, schema-marked, and structured for local search from day one."
+    - objection: "Do I need to supply all the wording?"
+      answer: "No. Send us the basics and we can shape the copy so your services, location, and offer are clear."
+    - objection: "Can customers contact me on WhatsApp?"
+      answer: "Yes. We can add WhatsApp click-to-chat, call buttons, enquiry links, forms, maps, and booking links."
+    - objection: "What if I already have a domain?"
+      answer: "No problem. We can connect your existing domain, help with DNS, or include a new domain if you need one."
+    - objection: "Can I upgrade later?"
+      answer: "Yes. Start small, then add pages, SEO support, galleries, forms, analytics, or regular content changes as you grow."
+  social_proof:
+    - quote: "Intellify got us live in two weeks. Our leads doubled in the first month."
+      author: "Sarah M."
+      role: "Owner, Poolware & Service"
+    - quote: "Finally a web partner who speaks plain English and delivers on time."
+      author: "James K."
+      role: "Director, Homeloans and Bonds"
+    - quote: "Zero tech stress. They handle everything — I just run my business."
+      author: "Priya N."
+      role: "Founder, Evo Ultimate"
+  cta:
+    label: Start My Website — Risk Free
+    href: /contact/
+    subtext: "Cancel anytime · Includes hosting · Includes domain renewal"
+
+mission:
+  show: true
+  title: Our Mission
+  subtitle: " all in one solution"
+  highlight: Grow faster with our
+  paragraphs:
+    - Welcome to Intellify! We understand that starting a website can be overwhelming, from setting up a domain to managing the high capital expenses associated with it. That's where we step in to make the process easy and hassle-free.
+    - Our primary mission is to empower small and medium-sized service-based businesses by providing a seamless introduction to the online world. We believe that building trust and a strong online presence are crucial for fostering growth and success.
+    - With our services, we cater to your specific needs. Set yourself apart using our affordable subscription model, which eliminates the heavy upfront costs of website setup and maintenance.
+    - Let Intellify help you on this exciting journey. Together, we'll unlock your business's full potential and start elevating your brand matter. Unlock the power of an online profile now!
+  features:
+    - label: Easy Onboarding
+    - label: Business Growth
+    - label: Affordable Plans
+    - label: Full Potential
+
+offerings:
+  show: true
+  kicker: Pricing
+  title: Monthly website plans with no upfront build cost.
+  subtitle: Choose a managed website subscription that fits where your business is right now.
+  button_link: /contact/
+  plans:
+    - name: Starter
+      badge: Get online
+      price_prefix: From
+      price_key: starter
+      price_suffix: /mo
+      description: A lean single-page website for businesses that need to get online quickly without a large upfront expense.
+      cta: Start Small
+      features:
+        - Single page website
+        - Custom navigation bar and branded logo placement
+        - Simple hero and services
+        - Testimonials and about us
+        - Contact links
+        - Domain registration and annual renewal included (worth R150/year)
+        - Monthly hosting included (worth R100/month)
+    - name: Recommended
+      badge: Best fit
+      featured: true
+      price_prefix: From
+      price_key: recommended
+      price_suffix: /mo
+      description: A fuller multi-page website with stronger content, enquiry capture, and monthly changes included.
+      cta: Choose Recommended
+      features:
+        - Everything in Starter
+        - Multiple pages
+        - Custom navigation bar and branded logo placement
+        - Elaborate hero and services
+        - Image carousel or rotating gallery
+        - Testimonials and about us
+        - Contact form
+        - Team section
+        - Footer
+        - 2 changes per month
+        - Domain registration and annual renewal included (worth R150/year)
+        - Monthly hosting included (worth R100/month)
+    - name: Premium
+      badge: Scale up
+      price_prefix: From
+      price_key: premium
+      price_suffix: /mo
+      description: A premium managed site for businesses that want rich media, regular improvements, and analytics.
+      cta: Go Premium
+      features:
+        - Everything in Recommended
+        - Multi-page structure
+        - SEO optimized build
+        - Embedded video section
+        - Image carousel or rotating gallery
+        - Contact form and team
+        - 3 changes per month
+        - Site analytics
+        - Domain registration and annual renewal included (worth R150/year)
+        - Monthly hosting included (worth R100/month)
+
+portfolio:
+  show: true
+  title: Our Work
+  subtitle: Take a look at some of the beautiful, high-performing websites we've built for our clients.
+  visit_label: Visit Site
+  sites:
+    - title: Poolware and Service
+      url: https://www.poolwareandservice.co.za
+    - title: Homeloans and Bonds
+      url: https://www.homeloansandbonds.co.za
+    - title: Evo Ultimate
+      url: https://www.evoultimate.co.za
+    - title: Evo Bond Legacy
+      url: https://evobondlegacy.co.za/
+    - title: Evo Mortgage Solutions
+      url: https://evomortgagesolutions.co.za/
+    - title: Bond Squad
+      url: https://www.bondsquad.co.za
+    - title: Mzansi Bonds
+      url: https://www.mzansibonds.co.za
+    - title: Duces Capital
+      url: https://ducescapital.co.za/
+    - title: Apex Leadership
+      url: https://www.apexleadership.co.za
+    - title: Blue Key Home Finance
+      url: https://www.bluekeyhomefinance.co.za
+    - title: First Class Finance SA
+      url: https://www.firstclassfinancesa.co.za
+    - title: Homesure Bonds
+      url: https://www.homesurebonds.co.za/
+    - title: VM Home Loans
+      url: https://www.vmhomeloans.co.za
+    - title: Apex Leadership Next
+      url: https://apex-leadership-next.vercel.app
+    - title: Ceyoni Physio
+      url: https://phys-ceyo.vercel.app
+    - title: The Bond Studio
+      url: https://www.thebondstudio.co.za
+    - title: Intellify
+      url: https://www.intellify.co.za
+
+faq:
+  show: true
+  kicker: Common Questions
+  title: Website subscriptions, without the guesswork.
+  subtitle: Clear answers for South African businesses comparing website costs, timelines, hosting, local support, and SEO support.
+  items:
+    - question: How much does a business website cost in South Africa?
+      answer: Intellify's limited Starter offer is R99 per month, normally R150 per month, with no upfront build cost. Traditional business websites often require a large once-off build fee before hosting, domain renewal, updates, and support are added.
+    - question: What is included in your monthly website plans?
+      answer: Every plan includes domain registration, annual domain renewal worth R150, monthly hosting worth R100, custom website design, mobile-friendly pages, and ongoing technical support. Higher plans add features such as contact forms, monthly content changes, embedded video, SEO-focused build work, and analytics.
+    - question: How long does it take to get my website live?
+      answer: Starter websites are designed for a fast launch, often within 48 hours once the core content is ready. Larger multi-page sites usually take longer, depending on the number of pages, features, images, and approvals needed.
+    - question: Do you build websites with SEO in mind?
+      answer: Yes. Intellify websites are built to be fast, mobile-friendly, easy to crawl, and structured around the services and locations your customers search for. Premium plans include additional SEO support and analytics so you can understand how visitors find and use your site.
+    - question: Will my website help me compete with other local businesses?
+      answer: Yes. Your site is built to make your business look established, trustworthy, and easy to contact online. We focus on clear service pages, strong calls to action, mobile speed, and local search signals so customers can find you before they choose someone else.
+    - question: Do you offer local South African support?
+      answer: Yes. Intellify is South African owned and operated, with local support for updates, fixes, hosting questions, and launch guidance. You are not left with a website you do not know how to manage.
+    - question: Can you connect my website to WhatsApp and enquiries?
+      answer: Yes. We can add WhatsApp click-to-chat, enquiry buttons, contact forms, booking links, maps, and tracking so visitors have a clear next step and you can respond quickly.
+    - question: What makes Intellify different from a once-off website build?
+      answer: We build, host, maintain, and support your website as one managed subscription. That means no large build fee, no separate hosting admin, no renewal surprises, and no technical stress when something needs to change.
+
+portfolio_page:
+  header:
+    title_prefix: "Go online with "
+    title_highlight: no capital outlay.
+    description: Every Intellify site is built on a simple monthly subscription, so your business can get online without large upfront fees, technical stress, or surprise hosting costs.
+  plan:
+    badge: Managed Website Subscription
+    price_prefix: From
+    price_key: starter
+    price_suffix: / month
+    usp_title: No Capital Outlay
+    usp_description_prefix: "Skip the traditional "
+    usp_description_strikethrough: "~R5,000 to R15,000"
+    usp_description_suffix: " upfront cost."
+    description: Choose the package that fits where your business is today. We carry the build and hosting risk, while you get the benefit of being online for a predictable monthly fee.
+    button_text: Start Your Website
+    button_link: /contact/
+  tiers_header: "Choose your monthly website plan:"
+  tiers:
+    - name: Starter
+      badge: Get online
+      price_key: starter
+      suffix: / month
+      description: A lean single-page website for businesses that need a professional online presence quickly and affordably.
+      features:
+        - Single page website
+        - Custom navigation bar and branded logo placement
+        - Simple hero section
+        - Services section
+        - Testimonials section
+        - About us section
+        - Contact links without form integration
+        - Footer
+    - name: Recommended
+      badge: Best fit
+      price_key: recommended
+      suffix: / month
+      description: A fuller multi-page site for businesses ready to look more established and capture enquiries through a contact form.
+      features:
+        - Everything in Starter
+        - Multiple pages
+        - Custom navigation bar and branded logo placement
+        - Elaborate hero section
+        - Services section
+        - Image carousel or rotating gallery
+        - Testimonials section
+        - About us section
+        - Contact form
+        - Team section
+        - Footer
+        - 2 content changes per month
+    - name: Premium
+      badge: Scale up
+      price_key: premium
+      suffix: / month
+      description: A premium managed website with room to grow, rich media, monthly improvements, and analytics so you can understand your visitors.
+      features:
+        - Everything in Recommended
+        - Multiple pages
+        - Custom navigation bar and branded logo placement
+        - Elaborate hero section
+        - Services section
+        - Image carousel or rotating gallery
+        - Embedded video section
+        - Testimonials section
+        - About us section
+        - Contact form
+        - Team section
+        - Footer
+        - 3 content changes per month
+        - Site analytics
+  features_header: "Included with every monthly subscription:"
+  features:
+    - title: No upfront costs
+      description: We understand that building a website can be overwhelming and a huge capital expense. We have you covered. With NO upfront fees or lump sums you can go online at a low monthly cost. We carry the risk, you carry the benefit.
+    - title: Domain registration included
+      description: Your online journey starts with a domain name. Domain registration and the annual domain renewal, worth R150 per year, are included in your monthly fee.
+    - title: Fully Cloud-Managed & Secure
+      description: We handle all the technical heavy lifting - from state-of-the-art cloud hosting to complete codebase management and seamless feature updates. You get enterprise-grade reliability without needing an IT degree.
+    - title: Monthly hosting costs included
+      description: Hosting is the rent you pay for your website to live on a server, and it can cost around R100 per month on its own. With Intellify, that monthly hosting value is fully included.
+    - title: Lean, custom-coded websites
+      description: Every site is coded from the ground up to stay lean, fast, SEO optimized, and ready to scale as your business grows.
+  quote:
+    text: '"Your website should start simple, work hard from day one, and grow with your business month by month."'
+    author: Intellify Philosophy
+
+contact:
+  eyebrow: Get in touch
+  title_prefix: Contact
+  title_highlight: Us
+  intro: Have a question or ready to get started? Send us a message and we'll get back to you.
+  fields:
+    name: Name
+    email: Email Address
+    phone: Phone Number
+    message: Message
+    location: Location
+  submit: Send Message
+  sending: Sending your message...
+  sent: Message sent. Thank you, we'll be in touch soon.
+  error_prefix: Something went wrong. Please email
+
+privacy:
+  title: Privacy Policy
+  intro: This Privacy Policy describes how your personal information is collected, used, and shared when you visit Intellify.
+  sections:
+    - heading: Personal Information We Collect
+      body: We do not collect any data about you or use any cookies.
+    - heading: Changes
+      body: We may update this privacy policy from time to time for personal, operational, legal, or regulatory reasons.
+    - heading: Contact Us
+      body: For more information about our privacy practices or if you have questions, please contact us by email at

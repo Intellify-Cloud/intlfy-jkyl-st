@@ -1,0 +1,25 @@
+{% assign faq = content.faq %}
+
+{% if faq.show %}
+<section id="faq" class="section faq" aria-labelledby="faq-heading">
+  <div class="container">
+    <div class="faq-header">
+      <p class="section-kicker">{{ faq.kicker }}</p>
+      <h2 id="faq-heading" class="section-title">{{ faq.title }}</h2>
+      <p class="lead">{{ faq.subtitle }}</p>
+    </div>
+
+    <div class="faq-list">
+      {% for item in faq.items %}
+        <details class="faq-item"{% if forloop.first %} open{% endif %}>
+          <summary>
+            <span>{{ item.question }}</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </summary>
+          <p>{{ item.answer }}</p>
+        </details>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}

@@ -1,0 +1,110 @@
+---
+layout: page
+title: Website Pricing and Monthly Plans
+description: Compare Intellify managed website plans from R150 per month. Domain registration, annual renewal, hosting and ongoing management included.
+permalink: /pricing/
+last_modified_at: 2026-07-22
+faq_items:
+  - question: What is included in the monthly website price?
+    answer: Every plan includes responsive website design, domain registration, annual domain renewal, managed hosting, security and technical upkeep, and support from a South African team.
+  - question: Why do the plans start from monthly pricing?
+    answer: The monthly model removes the large upfront build cost and keeps hosting, domain renewal, support, and plan-based updates under one predictable subscription.
+  - question: Can I start with Starter and upgrade later?
+    answer: Yes. You can start with a focused first presence and upgrade when your business needs more pages, forms, video, analytics, or regular improvements.
+  - question: Which plan should I choose?
+    answer: Starter is best for a focused first presence, Recommended suits businesses that need more pages and enquiry capture, and Premium is for richer content, analytics, and more frequent updates.
+---
+{% assign plans = site.data.sitetext.offerings.plans %}
+{% assign prices = site.data.sitetext.prices %}
+
+<header class="seo-landing-hero">
+  <div class="container">
+    <p class="seo-landing-kicker">Simple monthly pricing</p>
+    <h1>Choose the website your business needs now.</h1>
+    <p class="lead">Every plan includes managed hosting, domain registration, and annual renewal. Start focused, then grow your website as your business grows.</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="wide-container">
+    <div class="pricing-page-grid">
+      {% for plan in plans %}
+        {% assign price = prices[plan.price_key] %}
+        <article class="pricing-page-card{% if plan.featured %} is-featured{% endif %}">
+          {% if plan.price_key == 'starter' %}
+            <div class="offer-sash">Limited time offer</div>
+          {% endif %}
+          <span class="badge">{{ plan.badge }}</span>
+          <h2>{{ plan.name }}</h2>
+          <div class="price">
+            <span>{{ plan.price_prefix }}</span>
+            {% if plan.price_key == 'starter' %}
+              <del>{{ prices.starter_original }}</del>
+            {% endif %}
+            <strong>{{ price }}</strong>
+            <span>{{ plan.price_suffix }}</span>
+          </div>
+          <p>{{ plan.description }}</p>
+          <ul>
+            {% for feature in plan.features %}
+              <li><span class="check">&#10003;</span><span>{{ feature }}</span></li>
+            {% endfor %}
+          </ul>
+          <a class="button" href="{{ '/contact/' | relative_url }}">{{ plan.cta }}</a>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section-soft">
+  <div class="container seo-content-grid">
+    <article class="seo-copy">
+      <h2>What every plan takes care of</h2>
+      <p>We manage the technical foundation so your business does not need to coordinate separate hosting, domain, and maintenance suppliers.</p>
+      <p>The value is not only the website design. It is having a professional online home that stays live, stays managed, and gives customers a clear way to understand and contact your business.</p>
+      <ul>
+        <li>Professional responsive design</li>
+        <li>Domain registration and annual renewal</li>
+        <li>Managed website hosting</li>
+        <li>Security and technical upkeep</li>
+        <li>Support from a South African team</li>
+      </ul>
+
+      <h3>Need help choosing?</h3>
+      <p>Tell us what your visitors need to understand and what action you want them to take. We'll recommend the leanest plan that serves that goal properly.</p>
+
+      {% include seo-faq.html %}
+    </article>
+
+    <aside class="seo-side-card">
+      <h2>See what Starter could become.</h2>
+      <p>Explore a visual showcase of domains, navigation, heroes, services, and optional sections.</p>
+      <a class="button" href="{{ '/image-your-site-starter/' | relative_url }}">Start to dream</a>
+      <div class="seo-internal-links">
+        <a href="{{ '/managed-website-subscriptions-south-africa/' | relative_url }}">How managed subscriptions work</a>
+        <a href="{{ '/small-business-website-packages-south-africa/' | relative_url }}">Package guidance</a>
+        <a href="{{ '/website-design-durban/' | relative_url }}">Website design in Durban</a>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Intellify Managed Website Plans",
+  "brand": {
+    "@type": "Brand",
+    "name": "Intellify"
+  },
+  "offers": {
+    "@type": "AggregateOffer",
+    "lowPrice": "{{ prices.starter | remove: 'R' }}",
+    "highPrice": "{{ prices.premium | remove: 'R' }}",
+    "priceCurrency": "ZAR",
+    "offerCount": "{{ plans.size }}"
+  }
+}
+</script>

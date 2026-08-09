@@ -1,0 +1,14 @@
+logo: intellify
+
+nav:
+  - title: "Start To Dream"
+    url: /image-your-site-starter/
+
+  - title: "Pricing"
+    url: /pricing
+
+  - title: "Our Work"
+    section: "#our-work"
+
+  - title: "Contact"
+    url: /contact

@@ -1,0 +1,77 @@
+{% assign contact = site.data.sitetext.contact %}
+
+<section class="contact-section" id="contact">
+  <div class="contact-container">
+    <div class="contact-hero">
+      <div class="eyebrow">{{ contact.eyebrow }}</div>
+      <h1>{{ contact.title_prefix }} <span class="gradient-text">{{ contact.title_highlight }}</span></h1>
+      <p class="lead">{{ contact.intro }}</p>
+    </div>
+
+    <div class="contact-grid">
+      <aside class="contact-panel">
+        <div class="contact-panel-top">
+          <p class="section-kicker">Start Here</p>
+          <h2>Tell us where your business is headed.</h2>
+          <p>Share what you do, what you need your website to achieve, and how soon you want to go live. We will help you choose a monthly plan that fits.</p>
+        </div>
+
+        <div class="contact-detail-list">
+          <a class="contact-detail" href="mailto:{{ site.email }}?subject=Intellify Website Enquiry">
+            <span aria-hidden="true">Email</span>
+            <strong>{{ site.email }}</strong>
+          </a>
+          <a class="contact-detail" href="https://wa.me/{{ site.phone | remove: '+' | remove: ' ' }}" target="_blank" rel="noopener noreferrer">
+            <span aria-hidden="true">WhatsApp</span>
+            <strong>Message us directly</strong>
+          </a>
+        </div>
+      </aside>
+
+      <form
+        class="contact-form-card"
+        data-contact-form
+        data-sending-message="{{ contact.sending | escape }}"
+        data-sent-message="{{ contact.sent | escape }}"
+        data-error-prefix="{{ contact.error_prefix | escape }}"
+        data-error-email="{{ site.email | escape }}"
+        data-api-url="{{ site.broadsheet_api_url | escape }}"
+      >
+        <div class="honeypot" aria-hidden="true">
+          <label for="location">{{ contact.fields.location }}</label>
+          <input id="location" name="location" type="text" tabindex="-1" autocomplete="off">
+        </div>
+
+        <div class="contact-form-grid">
+          <div class="field">
+            <label for="name">{{ contact.fields.name }} *</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+
+          <div class="field">
+            <label for="phoneNumber">{{ contact.fields.phone }}</label>
+            <input id="phoneNumber" name="phoneNumber" type="tel" autocomplete="tel">
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="emailAddress">{{ contact.fields.email }} *</label>
+          <input id="emailAddress" name="emailAddress" type="email" autocomplete="email" required>
+        </div>
+
+        <div class="field">
+          <label for="content">{{ contact.fields.message }} *</label>
+          <textarea id="content" name="content" rows="6" placeholder="Tell us about your business, the kind of site you need, and which plan you are considering." required></textarea>
+        </div>
+
+        <button type="submit">
+          {{ contact.submit }}
+          <span aria-hidden="true">&rarr;</span>
+        </button>
+        <div class="form-status" data-form-status aria-live="polite"></div>
+
+        <p class="contact-note">No upfront build cost. Domain, hosting, code management, and ongoing support are handled through your monthly subscription.</p>
+      </form>
+    </div>
+  </div>
+</section>

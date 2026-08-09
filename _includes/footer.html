@@ -1,0 +1,38 @@
+<footer class="site-footer">
+  {% assign footer = site.data.sitetext.footer %}
+
+  <div class="footer-inner">
+    <div class="footer-brand-block">
+      <a class="footer-brand" href="{{ '/' | relative_url }}" aria-label="{{ site.data.sitetext.name }} home">
+        <span class="brand-dot"></span>
+        <span>{{ site.data.navigation.logo }}</span>
+      </a>
+
+      <p>{{ footer.brand.description }}</p>
+    </div>
+
+    <nav class="footer-columns" aria-label="Footer navigation">
+      {% for column in footer.columns %}
+        <div class="footer-column">
+          <h2>{{ column.title }}</h2>
+          <ul>
+            {% for link in column.links %}
+              <li>
+                <a href="{{ link.href | relative_url }}">{{ link.label }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endfor %}
+    </nav>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; {{ 'now' | date: '%Y' }} {{ site.data.sitetext.name }}. All rights reserved.</p>
+    <div class="footer-bottom-links">
+      {% for link in footer.links %}
+        <a href="{{ link.href | relative_url }}">{{ link.label }}</a>
+      {% endfor %}
+    </div>
+  </div>
+</footer>

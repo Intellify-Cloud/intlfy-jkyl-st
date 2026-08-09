@@ -1,0 +1,39 @@
+title: Intellify
+description: "Go Online. Grow Online."
+url: "https://www.intellify.co.za"
+production_url: "https://www.intellify.co.za"
+baseurl: ""
+company: Intellify
+author: Intellify
+email: pieter@intellify.co.za
+phone: "+27818868834"
+css_version: "20260608-6"
+logo:
+  path: /assets/img/brand/favicon.png
+google_tag_manager: "GTM-N3WL5F56"
+
+address: Durban
+permalink: pretty
+
+sass:
+  sass_dir: _assets
+  style: compressed
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+exclude:
+  - node_modules
+  - .kilo
+  - package.json
+  - package-lock.json
+  - README.md
+  - scripts
+  - _assets
+  - _private
+  - _private_docs
+
+broadsheet_api_url: https://ca-broadsheet-webapi.mangodesert-1e0c2940.westeurope.azurecontainerapps.io

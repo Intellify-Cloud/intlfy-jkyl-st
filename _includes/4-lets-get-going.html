@@ -1,0 +1,64 @@
+{% assign s = site.data.sitetext.lets_get_going %}
+{% if s.show %}
+<section class="reassurance" id="reassurance" aria-labelledby="reassurance-title">
+  <div class="container">
+
+    {% if s.kicker %}
+    <p class="reassurance-kicker">{{ s.kicker }}</p>
+    {% endif %}
+    <h2 id="reassurance-title" class="reassurance-title">{{ s.title }}</h2>
+    <p class="reassurance-lead">{{ s.text }}</p>
+
+    {% if s.stats %}
+    <div class="reassurance-stats" aria-label="Intellify results">
+      {% for stat in s.stats %}
+      <div class="stat">
+        <span class="stat-value">{{ stat.value }}</span>
+        <span class="stat-label">{{ stat.label }}</span>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    {% if s.risk_reversal %}
+    <div class="risk-reversal" aria-labelledby="risk-reversal-title">
+      <h3 id="risk-reversal-title">{{ s.risk_reversal.headline }}</h3>
+      <ul class="risk-points">
+        {% for point in s.risk_reversal.points %}
+        <li><span aria-hidden="true">✓</span>{{ point }}</li>
+        {% endfor %}
+        {% if s.trust_badges %}
+        {% for badge in s.trust_badges %}
+        <li><span aria-hidden="true">&#10003;</span>{{ badge }}</li>
+        {% endfor %}
+        {% endif %}
+      </ul>
+    </div>
+    {% endif %}
+
+    {% if s.objection_handlers %}
+    <div class="objection-handlers" aria-labelledby="objections-title">
+      <h3 id="objections-title" class="visually-hidden">Common questions answered</h3>
+      <dl class="objection-list">
+        {% for o in s.objection_handlers %}
+        <div class="objection-item">
+          <dt class="objection-q">{{ o.objection }}</dt>
+          <dd class="objection-a">{{ o.answer }}</dd>
+        </div>
+        {% endfor %}
+      </dl>
+    </div>
+    {% endif %}
+
+    {% if s.cta %}
+    <div class="reassurance-cta">
+      <a class="button button-primary" href="{{ s.cta.href | relative_url }}">{{ s.cta.label }} <span aria-hidden="true">&rarr;</span></a>
+      {% if s.cta.subtext %}
+      <p class="cta-subtext">{{ s.cta.subtext }}</p>
+      {% endif %}
+    </div>
+    {% endif %}
+
+  </div>
+</section>
+{% endif %}

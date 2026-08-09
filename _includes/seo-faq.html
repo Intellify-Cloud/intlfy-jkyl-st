@@ -1,0 +1,11 @@
+{% if page.faq_items %}
+<h3>Frequently asked questions</h3>
+<div class="seo-faq-list">
+  {% for item in page.faq_items %}
+    <details{% if forloop.first %} open{% endif %}>
+      <summary>{{ item.question }}</summary>
+      <p>{{ item.answer }}</p>
+    </details>
+  {% endfor %}
+</div>
+{% endif %}

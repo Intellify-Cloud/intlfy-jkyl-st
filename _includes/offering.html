@@ -1,0 +1,43 @@
+{% assign offering = content.offerings %}
+
+{% if offering.show %}
+<section id="services" class="section-soft offering" aria-labelledby="services-heading">
+  <div class="container">
+    <div class="offering-header">
+      <p class="section-kicker">{{ offering.kicker }}</p>
+      <h2 id="services-heading" class="section-title">{{ offering.title }}</h2>
+      <p class="lead">{{ offering.subtitle }}</p>
+    </div>
+
+    <div class="offering-grid">
+      {% for plan in offering.plans %}
+        {% assign plan_price = site.data.sitetext.prices[plan.price_key] | default: plan.price_amount %}
+        <article class="offering-card{% if plan.featured %} is-featured{% endif %}">
+          {% if plan.price_key == 'starter' %}
+            <div class="offer-sash">Limited time offer</div>
+          {% endif %}
+          {% if plan.badge %}
+            <div class="badge">{{ plan.badge }}</div>
+          {% endif %}
+          <h3>{{ plan.name }} Website Plan</h3>
+          <p>{{ plan.description }}</p>
+          <div class="offering-price">
+            <span>{{ plan.price_prefix }}</span>
+            {% if plan.price_key == 'starter' %}
+              <del>{{ site.data.sitetext.prices.starter_original }}</del>
+            {% endif %}
+            <strong>{{ plan_price }}</strong>
+            <span>{{ plan.price_suffix }}</span>
+          </div>
+          <ul class="offering-features">
+            {% for feature in plan.features %}
+              <li><span class="check" aria-hidden="true">&#10003;</span> {{ feature }}</li>
+            {% endfor %}
+          </ul>
+          <a class="button" href="{{ offering.button_link | relative_url }}">{{ plan.cta }} <span aria-hidden="true">&rarr;</span></a>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}

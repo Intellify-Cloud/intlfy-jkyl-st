@@ -1,0 +1,109 @@
+---
+layout: page
+title: Website Plans South Africa
+description: Managed monthly website subscriptions from Intellify. No upfront costs, domain registration, hosting, SEO and cloud management included. From R150/month.
+permalink: /portfolio/
+robots: noindex, follow
+---
+
+<script>
+  window.location.replace("{{ '/#our-work' | relative_url }}");
+</script>
+<noscript>
+  <p class="center"><a class="button" href="{{ '/#our-work' | relative_url }}">View Our Work</a></p>
+</noscript>
+
+{% assign page_data = site.data.sitetext.portfolio_page %}
+{% assign plan_price = site.data.sitetext.prices[page_data.plan.price_key] | default: page_data.plan.price_amount %}
+
+<section class="page-hero">
+  <div class="container">
+    <h1>{{ page_data.header.title_prefix }}<span class="gradient-text">{{ page_data.header.title_highlight }}</span></h1>
+    <p class="lead">{{ page_data.header.description }}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container split-layout">
+    <aside class="plan-card">
+      <div class="badge">{{ page_data.plan.badge }}</div>
+      <div class="price">
+        <span>{{ page_data.plan.price_prefix }}</span>
+        <strong>{{ plan_price }}</strong>
+        <span>{{ page_data.plan.price_suffix }}</span>
+      </div>
+      <div class="usp">
+        <strong><span class="check" aria-hidden="true">&#10003;</span> {{ page_data.plan.usp_title }}</strong>
+        <p>{{ page_data.plan.usp_description_prefix }}<s>{{ page_data.plan.usp_description_strikethrough }}</s>{{ page_data.plan.usp_description_suffix }}</p>
+      </div>
+      <p>{{ page_data.plan.description }}</p>
+      <a class="button" href="{{ page_data.plan.button_link | relative_url }}">{{ page_data.plan.button_text }}</a>
+    </aside>
+
+    <div>
+      <h2>{{ page_data.tiers_header }}</h2>
+      <div class="portfolio-tier-grid">
+        {% for tier in page_data.tiers %}
+          {% assign tier_price = site.data.sitetext.prices[tier.price_key] | default: tier.price %}
+          <article class="portfolio-tier-card{% if tier.name == 'Recommended' %} is-featured{% endif %}">
+            <div class="badge">{{ tier.badge }}</div>
+            <h3>{{ tier.name }}</h3>
+            <div class="tier-price">
+              <strong>{{ tier_price }}</strong>
+              <span>{{ tier.suffix }}</span>
+            </div>
+            <p>{{ tier.description }}</p>
+            <ul>
+              {% for feature in tier.features %}
+                <li><span class="check" aria-hidden="true">&#10003;</span> {{ feature }}</li>
+              {% endfor %}
+            </ul>
+          </article>
+        {% endfor %}
+      </div>
+
+      <h2>{{ page_data.features_header }}</h2>
+      {% for feature in page_data.features %}
+        <article class="feature-detail">
+          <span class="check" aria-hidden="true">&#10003;</span>
+          <div>
+            <h3>{{ feature.title }}</h3>
+            <p>{{ feature.description }}</p>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="quote-panel">
+      <h2>{{ page_data.quote.text }}</h2>
+      <strong>{{ page_data.quote.author }}</strong>
+    </div>
+  </div>
+</section>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Intellify Managed Website Subscription",
+  "description": "Professional website with no upfront costs, includes hosting, domain, and SEO optimization",
+  "brand": {
+    "@type": "Brand",
+    "name": "Intellify"
+  },
+  "offers": [
+    {% for tier in page_data.tiers %}
+    {% assign tier_price = site.data.sitetext.prices[tier.price_key] | default: tier.price %}
+    {
+      "@type": "Offer",
+      "name": "{{ tier.name }} Plan",
+      "price": "{{ tier_price | replace_first: 'R', '' }}",
+      "priceCurrency": "ZAR",
+      "description": "{{ tier.description }}"
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>

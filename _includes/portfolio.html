@@ -1,0 +1,44 @@
+{% if content.portfolio.show %}
+<section class="section portfolio-bg" id="our-work">
+  <div class="wide-container">
+    <div class="portfolio-header">
+      <h2 class="section-title">{{ content.portfolio.title }}</h2>
+      <p class="lead">{{ content.portfolio.subtitle }}</p>
+    </div>
+    <div class="portfolio-grid">
+      {% for item in content.portfolio.sites %}
+        <article class="site-card">
+          <div class="browser-bar">
+            <div class="dots"><span></span><span></span><span></span></div>
+            <div class="url-chip">{{ item.url | replace: 'https://www.', '' | replace: 'https://', '' }}</div>
+          </div>
+          <div class="site-preview">
+            <img src="https://s0.wp.com/mshots/v1/{{ item.url | url_encode }}?w=800" alt="{{ item.title }} - Intellify managed website example" loading="lazy" width="400" height="225">
+            <div class="site-overlay">
+              <a class="button" href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ content.portfolio.visit_label }} <span aria-hidden="true">&#8599;</span></a>
+            </div>
+          </div>
+          <h3>{{ item.title }}</h3>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Intellify Portfolio Websites",
+  "itemListElement": [
+    {% for item in content.portfolio.sites %}
+    {
+      "@type": "ListItem",
+      "position": {{ forloop.index }},
+      "url": {{ item.url | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>
