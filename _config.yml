@@ -36,4 +36,4 @@ exclude:
   - _private
   - _private_docs
 
-broadsheet_api_url: https://broadsheet.intellify.co.za/
+broadsheetApiUrl: https://api.broadsheet.intellify.co.za

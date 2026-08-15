@@ -38,6 +38,18 @@
   border-color: var(--accent);
 }
 
+.field input[aria-invalid="true"],
+.field textarea[aria-invalid="true"] {
+  border-color: #dc2626;
+}
+
+.field-error {
+  min-height: 18px;
+  color: #dc2626;
+  font-size: 12px;
+  font-weight: 700;
+}
+
 .honeypot {
   position: absolute;
   left: -9999px;
@@ -53,4 +65,12 @@
 .form-status a {
   color: var(--accent);
   text-decoration: underline;
+}
+
+.form-status-success {
+  color: #15803d;
+}
+
+.form-status-error {
+  color: #dc2626;
 }

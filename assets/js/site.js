@@ -189,9 +189,17 @@
       const apiUrl = form.dataset.apiUrl;
       if (!apiUrl) throw new Error("Missing API URL");
 
+      const body = {
+        name: String(data.get("name") || "").trim(),
+        emailAddress: String(data.get("emailAddress") || "").trim(),
+        phoneNumber: String(data.get("phoneNumber") || "").trim(),
+        location: String(data.get("location") || ""),
+        content: String(data.get("content") || "").trim(),
+      };
+
       const response = await fetch(`${apiUrl.replace(/\/$/, "")}/v1/messages`, {
         method: "POST",
-        body: JSON.stringify(Object.fromEntries(data.entries())),
+        body: JSON.stringify(body),
         headers: { "Content-Type": "application/json" },
       });
 

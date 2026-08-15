@@ -29,23 +29,38 @@
       </aside>
 
       <form
+        id="contactForm"
         class="contact-form-card"
-        data-contact-form
+        novalidate
         data-sending-message="{{ contact.sending | escape }}"
         data-sent-message="{{ contact.sent | escape }}"
         data-error-prefix="{{ contact.error_prefix | escape }}"
         data-error-email="{{ site.email | escape }}"
-        data-api-url="{{ site.broadsheet_api_url | escape }}"
       >
         <div class="honeypot" aria-hidden="true">
           <label for="location">{{ contact.fields.location }}</label>
-          <input id="location" name="location" type="text" tabindex="-1" autocomplete="off">
+          <input id="location" name="location" type="text" tabindex="-1" autocomplete="off" hidden>
         </div>
 
         <div class="contact-form-grid">
           <div class="field">
-            <label for="name">{{ contact.fields.name }} *</label>
-            <input id="name" name="name" type="text" autocomplete="name" required>
+            <label for="firstName">{{ contact.fields.first_name }} *</label>
+            <input id="firstName" name="firstName" type="text" autocomplete="given-name" required>
+            <span class="field-error" id="error-firstName"></span>
+          </div>
+
+          <div class="field">
+            <label for="lastName">{{ contact.fields.last_name }} *</label>
+            <input id="lastName" name="lastName" type="text" autocomplete="family-name" required>
+            <span class="field-error" id="error-lastName"></span>
+          </div>
+        </div>
+
+        <div class="contact-form-grid">
+          <div class="field">
+            <label for="emailAddress">{{ contact.fields.email }} *</label>
+            <input id="emailAddress" name="emailAddress" type="email" autocomplete="email" required>
+            <span class="field-error" id="error-emailAddress"></span>
           </div>
 
           <div class="field">
@@ -55,23 +70,102 @@
         </div>
 
         <div class="field">
-          <label for="emailAddress">{{ contact.fields.email }} *</label>
-          <input id="emailAddress" name="emailAddress" type="email" autocomplete="email" required>
-        </div>
-
-        <div class="field">
           <label for="content">{{ contact.fields.message }} *</label>
           <textarea id="content" name="content" rows="6" placeholder="Tell us about your business, the kind of site you need, and which plan you are considering." required></textarea>
+          <span class="field-error" id="error-content"></span>
         </div>
 
-        <button type="submit">
-          {{ contact.submit }}
+        <button type="submit" id="submitBtn">
+          <span>{{ contact.submit }}</span>
           <span aria-hidden="true">&rarr;</span>
         </button>
-        <div class="form-status" data-form-status aria-live="polite"></div>
+        <div class="form-status form-status-success" id="status-sent" aria-live="polite" hidden>{{ contact.sent }}</div>
+        <div class="form-status form-status-error" id="status-error" aria-live="polite" hidden>{{ contact.error_prefix }} <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</div>
 
         <p class="contact-note">No upfront build cost. Domain, hosting, code management, and ongoing support are handled through your monthly subscription.</p>
       </form>
     </div>
   </div>
 </section>
+
+<script>
+  (() => {
+    const API_URL = '{{ site.broadsheetApiUrl }}';
+    const form = document.getElementById('contactForm');
+    if (!form) return;
+
+    const fields = {
+      firstName: document.getElementById('firstName'),
+      lastName: document.getElementById('lastName'),
+      emailAddress: document.getElementById('emailAddress'),
+      phoneNumber: document.getElementById('phoneNumber'),
+      location: document.getElementById('location'),
+      content: document.getElementById('content')
+    };
+
+    const errors = {
+      firstName: document.getElementById('error-firstName'),
+      lastName: document.getElementById('error-lastName'),
+      emailAddress: document.getElementById('error-emailAddress'),
+      content: document.getElementById('error-content')
+    };
+
+    const submitBtn = document.getElementById('submitBtn');
+    const sentStatus = document.getElementById('status-sent');
+    const errorStatus = document.getElementById('status-error');
+    const requiredMessage = 'This field is required.';
+
+    const hideStatuses = () => {
+      sentStatus.hidden = true;
+      errorStatus.hidden = true;
+    };
+
+    const validate = () => {
+      let isValid = true;
+      Object.entries(errors).forEach(([key, error]) => {
+        const field = fields[key];
+        const missing = !field.value.trim();
+        error.textContent = missing ? requiredMessage : '';
+        field.setAttribute('aria-invalid', missing ? 'true' : 'false');
+        if (missing) isValid = false;
+      });
+      return isValid;
+    };
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      hideStatuses();
+
+      if (fields.location.value) return;
+      if (!validate()) return;
+
+      submitBtn.disabled = true;
+
+      const body = {
+        name: fields.firstName.value.trim() + ' ' + fields.lastName.value.trim(),
+        emailAddress: fields.emailAddress.value.trim(),
+        phoneNumber: fields.phoneNumber.value.trim(),
+        location: fields.location.value,
+        content: fields.content.value.trim()
+      };
+
+      try {
+        const response = await fetch(API_URL + '/v1/messages', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(body)
+        });
+
+        if (!response.ok) throw new Error('Request failed');
+        form.reset();
+        Object.values(errors).forEach((error) => { error.textContent = ''; });
+        Object.values(fields).forEach((field) => field.removeAttribute('aria-invalid'));
+        sentStatus.hidden = false;
+      } catch {
+        errorStatus.hidden = false;
+      } finally {
+        submitBtn.disabled = false;
+      }
+    });
+  })();
+</script>

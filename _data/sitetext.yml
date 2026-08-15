@@ -348,6 +348,8 @@ contact:
   intro: Have a question or ready to get started? Send us a message and we'll get back to you.
   fields:
     name: Name
+    first_name: First Name
+    last_name: Last Name
     email: Email Address
     phone: Phone Number
     message: Message
