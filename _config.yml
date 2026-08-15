@@ -36,4 +36,4 @@ exclude:
   - _private
   - _private_docs
 
-broadsheet_api_url: https://ca-broadsheet-webapi.mangodesert-1e0c2940.westeurope.azurecontainerapps.io
+broadsheet_api_url: https://broadsheet.intellify.co.za/
