@@ -14,6 +14,14 @@ footer:
   brand:
     description: Managed website subscriptions for South African businesses that want a professional online presence without upfront build costs.
   columns:
+    - title: Services
+      links:
+        - label: Managed Website Subscriptions
+          href: /managed-website-subscriptions-south-africa/
+        - label: Small Business Packages
+          href: /small-business-website-packages-south-africa/
+        - label: Website Design Durban
+          href: /website-design-durban/
     - title: Pricing
       links:
         - label: Website Plans
@@ -43,16 +51,18 @@ footer:
   links:
     - label: Privacy Policy
       href: /privacy-policy/
+    - label: Legal
+      href: /legal/
 
 hero:
   show: true
-  eyebrow: Affordable Subscriptions Websites
-  headline: Professional Websites.
-  headline_highlight: ZERO Upfront Costs.
+  eyebrow: Managed Websites for South African Businesses
+  headline: Get your own website.
+  headline_highlight: No Large Upfront Cost.
   subheadline: "Limited offer: from R99/month, usually R150/month. We build, host, and manage everything for you."
-  supporting_text: "We can help and handle design, domain registration, hosting, updates, and security while you run your business."
+  supporting_text: "Intellify helps small businesses get a credible, mobile-friendly website with domain setup, hosting, technical upkeep, support, and a clear path for customers to enquire."
   primary_cta:
-    label: Get My Website
+    label: Start a Website Enquiry
     href: /contact/
   proof_points:
     - No upfront cost
@@ -62,10 +72,10 @@ lets_get_going:
   show: true
   kicker: Why businesses choose Intellify
   title: No upfront cost.<br>No lock-in.<br>No technical headaches.
-  text: We've helped local businesses get online with a website that works—without the R5,000–R15,000 build fee, hosting hassles, or long-term contracts.
+  text: We've helped local businesses get online with a website that works without the typical R5,000 to R15,000 build fee, hosting hassles, or long-term contracts.
   stats:
-    - value: "99.9%"
-      label: Uptime guarantee
+    - value: "Managed"
+      label: Hosting and upkeep
     - value: "5 Days"
       label: Average launch time
     - value: "R 0.00"
@@ -84,11 +94,11 @@ lets_get_going:
     - objection: "What if I need changes later?"
       answer: "Every plan includes monthly content updates. Need more? We're an email away."
     - objection: "Will my site look generic?"
-      answer: "Every site is custom-designed for your brand — no templates, no cookie-cutter layouts."
+      answer: "Every site is custom-designed for your brand, services, location, and customer journey. We do not rely on generic template copy."
     - objection: "What happens if something breaks?"
-      answer: "We monitor 24/7. Security patches, backups, and uptime are our problem, not yours."
+      answer: "We handle technical upkeep, security checks, backups, and hosting support so you are not left managing the website alone."
     - objection: "Is SEO actually included?"
-      answer: "Yes — fast, mobile-first, schema-marked, and structured for local search from day one."
+      answer: "Yes. Each site is built to be fast, mobile-friendly, crawlable, and structured around the services, locations, and questions your customers search for."
     - objection: "Do I need to supply all the wording?"
       answer: "No. Send us the basics and we can shape the copy so your services, location, and offer are clear."
     - objection: "Can customers contact me on WhatsApp?"
@@ -98,30 +108,45 @@ lets_get_going:
     - objection: "Can I upgrade later?"
       answer: "Yes. Start small, then add pages, SEO support, galleries, forms, analytics, or regular content changes as you grow."
   social_proof:
-    - quote: "Intellify got us live in two weeks. Our leads doubled in the first month."
+    - quote: "Intellify helped us get online with a clear, professional website."
       author: "Sarah M."
       role: "Owner, Poolware & Service"
     - quote: "Finally a web partner who speaks plain English and delivers on time."
       author: "James K."
       role: "Director, Homeloans and Bonds"
-    - quote: "Zero tech stress. They handle everything — I just run my business."
+    - quote: "Zero tech stress. They handle everything - I just run my business."
       author: "Priya N."
       role: "Founder, Evo Ultimate"
   cta:
-    label: Start My Website — Risk Free
+    label: Start My Website Enquiry
     href: /contact/
-    subtext: "Cancel anytime · Includes hosting · Includes domain renewal"
+    subtext: "Cancel anytime. Includes hosting. Includes domain renewal."
+
+five_steps_block:
+  title: How your managed website gets built
+  intro: A simple process keeps the project moving while making sure your website explains the right services, locations, trust signals, and next steps.
+  steps:
+    - title: Share your business basics
+      text: Tell us what you do, who you serve, where you operate, and how visitors should contact you.
+    - title: Plan the page structure
+      text: We shape the site around clear search intent, useful service information, and simple internal links.
+    - title: Design and write the first version
+      text: Your website is custom-built with mobile-friendly layouts, clear calls to action, and SEO-ready metadata.
+    - title: Connect domain, hosting and enquiries
+      text: We handle the technical setup, including domain configuration, hosting, contact paths, and launch checks.
+    - title: Improve as your business grows
+      text: Your subscription includes support and plan-based changes, so the website can grow with new services, content, and goals.
 
 mission:
   show: true
   title: Our Mission
-  subtitle: " all in one solution"
+  subtitle: "Design, hosting, domain management and support in one plan"
   highlight: Grow faster with our
   paragraphs:
-    - Welcome to Intellify! We understand that starting a website can be overwhelming, from setting up a domain to managing the high capital expenses associated with it. That's where we step in to make the process easy and hassle-free.
-    - Our primary mission is to empower small and medium-sized service-based businesses by providing a seamless introduction to the online world. We believe that building trust and a strong online presence are crucial for fostering growth and success.
-    - With our services, we cater to your specific needs. Set yourself apart using our affordable subscription model, which eliminates the heavy upfront costs of website setup and maintenance.
-    - Let Intellify help you on this exciting journey. Together, we'll unlock your business's full potential and start elevating your brand matter. Unlock the power of an online profile now!
+    - Intellify helps South African small businesses get online without managing separate designers, hosting providers, domain renewals, and technical support.
+    - Our role is to create a professional website that explains your services clearly, builds trust, and gives customers a simple way to contact you.
+    - The subscription model removes the large upfront build fee and keeps core website needs in one predictable monthly plan.
+    - Start with the pages and features your business needs now, then improve the site over time as your services, audience, and goals develop.
   features:
     - label: Easy Onboarding
     - label: Business Growth
@@ -197,39 +222,45 @@ portfolio:
   visit_label: Visit Site
   sites:
     - title: Poolware and Service
-      url: https://www.poolwareandservice.co.za
+      url: https://poolwareandservice.co.za/
     - title: Homeloans and Bonds
-      url: https://www.homeloansandbonds.co.za
+      url: https://homeloansandbonds.co.za/
     - title: Evo Ultimate
-      url: https://www.evoultimate.co.za
+      url: https://evoultimate.co.za/
     - title: Evo Bond Legacy
       url: https://evobondlegacy.co.za/
     - title: Evo Mortgage Solutions
       url: https://evomortgagesolutions.co.za/
+    - title: Evo Copestone
+      url: https://evocopestone.co.za/
+    - title: Evo Home Loan Solutions
+      url: https://evohomeloansolutions.co.za/
     - title: Bond Squad
-      url: https://www.bondsquad.co.za
+      url: https://bondsquad.co.za/
     - title: Mzansi Bonds
-      url: https://www.mzansibonds.co.za
+      url: https://mzansibonds.co.za/
     - title: Duces Capital
       url: https://ducescapital.co.za/
+    - title: FYK Constructions
+      url: https://fykconstructions.com/
     - title: Apex Leadership
-      url: https://www.apexleadership.co.za
+      url: https://apexleadership.co.za
     - title: Blue Key Home Finance
-      url: https://www.bluekeyhomefinance.co.za
-    - title: First Class Finance SA
-      url: https://www.firstclassfinancesa.co.za
+      url: https://bluekeyhomefinance.co.za/
     - title: Homesure Bonds
-      url: https://www.homesurebonds.co.za/
+      url: https://homesurebonds.co.za/
     - title: VM Home Loans
-      url: https://www.vmhomeloans.co.za
-    - title: Apex Leadership Next
-      url: https://apex-leadership-next.vercel.app
-    - title: Ceyoni Physio
-      url: https://phys-ceyo.vercel.app
+      url: https://vmhomeloans.co.za/
+    - title: The Bond Cellar
+      url: https://thebondcellar.co.za/
+    - title: Mortgage 4U
+      url: https://mo4u.co.za/
+    - title: OobaLink NS
+      url: https://oobalink-ns.co.za/
     - title: The Bond Studio
-      url: https://www.thebondstudio.co.za
+      url: https://thebondstudio.co.za/
     - title: Intellify
-      url: https://www.intellify.co.za
+      url: https://intellify.co.za
 
 faq:
   show: true
@@ -361,10 +392,12 @@ contact:
 
 privacy:
   title: Privacy Policy
-  intro: This Privacy Policy describes how your personal information is collected, used, and shared when you visit Intellify.
+  intro: This Privacy Policy explains how Intellify handles personal information when you browse the website or submit an enquiry about a managed website subscription.
   sections:
     - heading: Personal Information We Collect
-      body: We do not collect any data about you or use any cookies.
+      body: If you contact us, we collect the details you submit, such as your name, email address, phone number, and message, so we can respond to your enquiry. The website may also use Google Tag Manager for measurement where configured.
+    - heading: How We Use Information
+      body: We use enquiry details to respond to requests, discuss website plans, provide support, and improve our services. We do not sell personal information.
     - heading: Changes
       body: We may update this privacy policy from time to time for personal, operational, legal, or regulatory reasons.
     - heading: Contact Us

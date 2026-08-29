@@ -70,15 +70,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": ["Organization", "LocalBusiness"],
+      "@type": ["Organization", {{ site.business_type | default: 'ProfessionalService' | jsonify }}],
       "@id": {{ site_origin | append: '/#organization' | jsonify }},
       "name": {{ site.company | default: site.title | jsonify }},
       "url": {{ site_origin | jsonify }},
       "logo": {{ logo_url | jsonify }},
       "email": {{ site.email | jsonify }},
       "telephone": {{ site.phone | jsonify }},
-      "address": {"@type": "PostalAddress", "addressLocality": "Durban", "addressCountry": "ZA"},
-      "areaServed": {"@type": "Country", "name": "South Africa"},
+      "address": {"@type": "PostalAddress", "addressLocality": {{ site.address | default: 'Durban' | jsonify }}, "addressCountry": "ZA"},
+      "areaServed": {"@type": "Country", "name": {{ site.service_area | default: 'South Africa' | jsonify }}},
       "knowsAbout": ["Website design", "Managed website subscriptions", "Website hosting", "Small business websites"]
     },
     {
@@ -87,6 +87,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       "url": {{ site_origin | jsonify }},
       "name": {{ site.title | jsonify }},
       "publisher": {"@id": {{ site_origin | append: '/#organization' | jsonify }}},
+      "inLanguage": "en-ZA"
+    },
+    {
+      "@type": "WebPage",
+      "@id": {{ canonical_url | append: '#webpage' | jsonify }},
+      "url": {{ canonical_url | jsonify }},
+      "name": {{ meta_title | jsonify }},
+      "description": {{ meta_description | strip_html | normalize_whitespace | jsonify }},
+      "isPartOf": {"@id": {{ site_origin | append: '/#website' | jsonify }}},
+      "about": {"@id": {{ site_origin | append: '/#organization' | jsonify }}},
       "inLanguage": "en-ZA"
     }
   ]

@@ -1,7 +1,7 @@
 title: Intellify
-description: "Go Online. Grow Online."
-url: "https://www.intellify.co.za"
-production_url: "https://www.intellify.co.za"
+description: "Managed website subscriptions for South African small businesses, with design, hosting, domain management, security and support included."
+url: "https://intellify.co.za"
+production_url: "https://intellify.co.za"
 baseurl: ""
 company: Intellify
 author: Intellify
@@ -13,6 +13,8 @@ logo:
 google_tag_manager: "GTM-N3WL5F56"
 
 address: Durban
+service_area: South Africa
+business_type: ProfessionalService
 permalink: pretty
 
 sass:

@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Contact Web Designer Durban
-description: Contact Intellify for managed website subscriptions in South Africa. Get your business online from R99/month with no upfront costs. Fast, SEO optimized websites.
+title: Contact Intellify for a Managed Website
+description: Contact Intellify about a managed website subscription for your South African business. Share your goals, ask questions and choose a sensible starting plan.
 permalink: /contact/
 robots: index, follow
 ---

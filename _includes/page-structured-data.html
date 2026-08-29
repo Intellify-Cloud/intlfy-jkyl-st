@@ -33,7 +33,7 @@
   "description": {{ page.description | jsonify }},
   "url": {{ page_url | jsonify }},
   "provider": {
-    "@type": "LocalBusiness",
+    "@type": {{ site.business_type | default: 'ProfessionalService' | jsonify }},
     "name": {{ site.company | default: site.title | jsonify }},
     "url": {{ site_origin | jsonify }},
     "email": {{ site.email | jsonify }},
